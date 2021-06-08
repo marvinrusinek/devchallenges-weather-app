@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background-color: $vulcan;
+
+  .main-container {
+    padding: 20px 123px 0 154px;
+
+    .temp-btn-container {
+      margin-bottom: 32px;
+      text-align: right;
+
+      .temp-btn {
+        margin-left: 12px;
+        background-color: $faux-black-coral;
+        color: var(--primary-color);
+        font-weight: bold;
+
+        &-active {
+          background-color: var(--primary-color);
+          color: $dark-blue-magenta;
+        }
+      }
+    }
+  }
+}
+
+
+footer {
+  margin-top: auto;
+  text-align: center;
+}

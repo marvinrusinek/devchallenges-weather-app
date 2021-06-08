@@ -1,0 +1,43 @@
+<section class="detail">
+  <div class="detail-location">
+    <button class="detail-search-for-places" (click)="onSearch()">Search for places</button>
+    <button class="round-btn detail-my-location" (click)="onGetGPSLocation()" title="get GPS location">
+      <span class="material-icons icon">my_location</span>
+    </button>
+  </div>
+
+  <div class="error-text" *ngIf="error">
+    {{ error?.message }}
+  </div>
+
+  <ng-container *ngIf="isInitialState">
+    <p class="location-select">Select a location to view weather details.</p>
+  </ng-container>
+
+  <ng-container *ngIf="!isInitialState && isLoading">
+    <div class="fa-2x">
+      <i class="fas fa-spinner fa-spin"></i>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="!isInitialState && !isLoading">
+    <div class="details">
+      <div class="detail-icon">
+        <app-weather-icon [state]="weather.weather_state_name"></app-weather-icon>
+      </div>
+
+      <div class="detail-temp">
+        <span class="detail-temp-value">{{ weather.the_temp | temperature: tempUnit }}</span>
+        <span class="detail-temp-unit">&deg;{{ tempUnit }}</span>
+      </div>
+
+      <div class="detail-status">{{ weather.weather_state_name }}</div>
+
+      <div class="detail-date">Today &bull; {{ weather.applicable_date | date: 'E, d MMM'}}</div>
+
+      <div class="detail-city">
+        <span class="material-icons icon">location_on</span> {{ weather.location }}
+      </div>
+    </div>
+  </ng-container>
+</section>

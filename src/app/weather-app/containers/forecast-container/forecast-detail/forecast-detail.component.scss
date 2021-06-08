@@ -1,0 +1,41 @@
+@import "../../../styles/variables";
+
+.forecast-data {
+  display: grid;
+  padding: 18px;
+  margin-bottom: 32px;
+  text-align: center;
+  background-color: $grayish-navy;
+}
+
+.date {
+  color: $lavender;
+}
+
+.forecast-data-icon {
+  display: block;
+  width: 72px;
+  height: 80px;
+  margin: 16px auto;
+}
+
+.forecast-data-temperature {
+  display: flex;
+  justify-content: space-between;
+}
+
+.max-temp {
+  color: $lavender;
+}
+
+.min-temp {
+  color: $bluish-gray;
+}
+
+@media (min-width: 600px) {
+  .forecast-data {
+    grid-template-columns: auto auto;
+    grid-col-gap: 15px;
+    grid-row-gap: 10px;
+  }
+}

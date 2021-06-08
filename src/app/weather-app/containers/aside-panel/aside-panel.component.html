@@ -1,0 +1,4 @@
+<aside class="aside-panel">
+  <app-aside-location class="fade" [hidden]="isLocationInputHidden" (closeEvent)="togglePanel()"></app-aside-location>
+  <app-aside-detail class="fade" [hidden]="!isLocationInputHidden" (closeEvent)="togglePanel()"></app-aside-detail>
+</aside>

@@ -1,0 +1,16 @@
+<div class="container">
+  <main class="main-container">
+    <div class="temp-btn-container">
+      <button class="round-btn temp-btn" [class.temp-btn-active]="tempUnit === TemperatureUnit.CELSIUS"
+              (click)="changeTemperatureUnit(TemperatureUnit.CELSIUS)">&deg;C</button>
+      <button class="round-btn temp-btn" [class.temp-btn-active]="tempUnit === TemperatureUnit.FAHRENHEIT"
+              (click)="changeTemperatureUnit(TemperatureUnit.FAHRENHEIT)">&deg;F</button>
+    </div>
+    <app-forecast-container></app-forecast-container>
+    <app-stats-container></app-stats-container>
+  </main>
+
+  <footer>
+    <app-footer></app-footer>
+  </footer>
+</div>

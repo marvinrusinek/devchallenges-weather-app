@@ -1,0 +1,87 @@
+@import "../../styles/variables";
+
+.highlights {
+  margin-left: 0;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stats {
+  padding: 25px 0 40px 0;
+  text-align: center;
+  background-color: $grayish-navy;
+
+  @media only screen and (max-width: 600px) {
+    width: 420px;
+    margin-left: -110px;
+  }
+}
+
+.stats-title {
+  font: 500 16px 'Raleway', sans-serif;
+  color: $lavender;
+  margin-bottom: 8px;
+}
+
+.stats-value {
+  font: 700 64px 'Raleway', sans-serif;
+  color: #e7e7eb;
+}
+
+.stats-detail {
+  width: 70%;
+  margin: 24px auto 0 auto;
+  font: 500 14px 'Raleway', sans-serif;
+  color: #e7e7eb;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 64px;
+  column-gap: 64px;
+}
+
+.direction-icon {
+  background: #585676;
+  color: inherit;
+  font-size: 16px;
+
+  &:focus {
+    transition: 1s rotate 360;
+  }
+}
+
+// progress bar
+.progress-content {
+  padding: 0 2%;
+  color: var(--secondary-color);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.progress-ticks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-bar {
+  border-radius: 80px;
+  margin: 2px 0;
+  background: var(--primary-color);
+}
+
+.progress-fill {
+  border-radius: inherit;
+  background: #ffec65;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .stats-container {
+    grid-template-columns: auto auto;
+  }
+}
