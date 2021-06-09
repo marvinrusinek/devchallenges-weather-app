@@ -49,8 +49,8 @@ This webpage was created as a submission to a DevChallenges (https://www.devchal
 - <b>User story:</b> I can see humidity percentage
 - <b>User story:</b> I can see a visibility indicator
 - <b>User story:</b> I can see the air pressure number
-- <b>User story(optional):</b> I can request my current location weather
-- <b>User story(optional):</b> I can convert temperature in Celcius to Fahrenheit and vice versa
+- <b>User story (optional):</b> I can request my current location weather
+- <b>User story (optional):</b> I can convert temperature in Celsius to Fahrenheit and vice versa
 
 ## Contact
 - Website [marvinrusinek.com] (http://www.marvinrusinek.com)
