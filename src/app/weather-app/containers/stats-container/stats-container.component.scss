@@ -5,8 +5,8 @@
 }
 
 .title {
-  font-size: 24px;
-  font-weight: bold;
+  font: 700 24px 'Raleway', sans-serif;
+  color: $lavender;
 }
 
 .stats {
@@ -28,14 +28,14 @@
 
 .stats-value {
   font: 700 64px 'Raleway', sans-serif;
-  color: #e7e7eb;
+  color: $lavender;
 }
 
 .stats-detail {
   width: 70%;
   margin: 24px auto 0 auto;
   font: 500 14px 'Raleway', sans-serif;
-  color: #e7e7eb;
+  color: $lavender;
 }
 
 .stats-container {
@@ -46,7 +46,7 @@
 }
 
 .direction-icon {
-  background: #585676;
+  background-color: $faux-black-coral;
   color: inherit;
   font-size: 16px;
 
@@ -76,7 +76,7 @@
 
 .progress-fill {
   border-radius: inherit;
-  background: #ffec65;
+  background-color: $light-yellow;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
